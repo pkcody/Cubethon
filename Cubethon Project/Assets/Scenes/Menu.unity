@@ -193,7 +193,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: CUBETHON
+  m_Text: Stanley Cup-athon
 --- !u!222 &380356692
 CanvasRenderer:
   m_ObjectHideFlags: 0
