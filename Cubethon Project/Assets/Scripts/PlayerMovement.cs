@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -8,6 +9,8 @@ public class PlayerMovement : MonoBehaviour
     public float forwardForce = 2000f;
     public float sidewaysForce = 500f;
 
+    public Text log;
+
     // we marked this a "fixedupdate" because we are using it to mess with physics
     void FixedUpdate()
     {
@@ -15,12 +18,24 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetKey("d"))
         {
-            rb.AddForce(sidewaysForce * Time.deltaTime, 0, 0, ForceMode.VelocityChange);
+            //rb.AddForce(sidewaysForce * Time.deltaTime, 0, 0, ForceMode.VelocityChange);
+            Command moveRight = new MoveRight(rb, sidewaysForce);
+            Invoker invoker = new Invoker();
+            invoker.SetCommand(moveRight);
+            invoker.ExecuteCommand(moveRight);
+
+            log.text = "Move Right";
         }
 
         if (Input.GetKey("a"))
         {
-            rb.AddForce(-sidewaysForce * Time.deltaTime, 0, 0, ForceMode.VelocityChange);
+            //rb.AddForce(-sidewaysForce * Time.deltaTime, 0, 0, ForceMode.VelocityChange);
+            Command moveLeft = new MoveLeft(rb, sidewaysForce);
+            Invoker invoker = new Invoker();
+            invoker.SetCommand(moveLeft);
+            invoker.ExecuteCommand(moveLeft);
+
+            log.text = "Move Left";
         }
 
         if(rb.position.y < -1f)
