@@ -5,6 +5,7 @@ using UnityEngine;
 public abstract class Command
 {
     public Rigidbody _player;
+    public float timestamp;
     public abstract void Execute();
 }
 
@@ -20,6 +21,7 @@ class MoveLeft : Command
 
     public override void Execute()
     {
+        timestamp = Time.timeSinceLevelLoad;
         _player.AddForce(-_force * Time.deltaTime, 0, 0, ForceMode.VelocityChange);
     }
 }
@@ -36,6 +38,7 @@ class MoveRight : Command
 
     public override void Execute()
     {
+        timestamp = Time.timeSinceLevelLoad;
         _player.AddForce(_force * Time.deltaTime, 0, 0, ForceMode.VelocityChange);
     }
 }
