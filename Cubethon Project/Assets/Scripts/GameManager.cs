@@ -26,10 +26,10 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (instantReplay)
-        {
-            RunInstantReplay();
-        }
+        //if (instantReplay)
+        //{
+        //    RunInstantReplay();
+        //}
     }
 
     public void CompleteLevel()
@@ -56,6 +56,7 @@ public class GameManager : MonoBehaviour
     {
         if (CommandLog.commands.Count == 0)
         {
+            instantReplay = false;
             return;
         }
         Command command = CommandLog.commands.Peek();

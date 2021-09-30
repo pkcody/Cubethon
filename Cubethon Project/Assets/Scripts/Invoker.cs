@@ -23,7 +23,7 @@ class Invoker
     {
         if (!disableLog)
         {
-            CommandLog.commands.Enqueue(moveCommand);
+            //CommandLog.commands.Enqueue(moveCommand);
         }
 
         Debug.Log(command);
