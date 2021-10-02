@@ -9,7 +9,16 @@ public class GameManager : MonoBehaviour
     public float restartDelay = 2f;
     GameObject player;
     public GameObject completeLevelUI;
-     public bool instantReplay = false;
+    public bool instantReplay = false;
+
+    private void OnEnable()
+    {
+        PlayerCollision.OnHurtObstacle += EndGame;
+    }
+    private void OnDisable()
+    {
+        PlayerCollision.OnHurtObstacle -= EndGame;
+    }
 
     void Start()
     {
@@ -37,8 +46,10 @@ public class GameManager : MonoBehaviour
         completeLevelUI.SetActive(true);
     }
      
-    public void EndGame()
+    public void EndGame(Collision collisionInfo)
     {
+        player.GetComponent<PlayerMovement>().enabled = false;
+        PlayerCollision.OnHurtObstacle -= EndGame;
         if (gameHasEnded == false)
         {
             gameHasEnded = true;

@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1536
     height: 780.8
   m_ShowMode: 4
-  m_Title: Game
+  m_Title: Scene
   m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 679, y: 492}
   m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
-  controlID: 67
+  controlID: 129
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -228,7 +228,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 68
+  controlID: 103
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -253,7 +253,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 69
+  controlID: 104
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -370,7 +370,7 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: -1830
+  m_LastSelectedObjectID: -2408
 --- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -434,21 +434,21 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/Materials
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 48
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/Materials
   m_LastFoldersGridSize: 48
   m_LastProjectPath: D:\A Fall 2021-----\SIM 335 GEA\Cubethon\Cubethon Project
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: b23a0000
-    m_LastClickedID: 15026
+    m_SelectedIDs: aa3a0000
+    m_LastClickedID: 15018
     m_ExpandedIDs: 00000000a43a000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -465,7 +465,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 0}
+      m_ClientGUIView: {fileID: 5}
     m_SearchString: 
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
@@ -565,7 +565,7 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 0
+  m_LastVerticalScrollValue: 501.60004
   m_GlobalObjectId: 
   m_LockTracker:
     m_IsLocked: 0
@@ -598,23 +598,23 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: c03a0000
+      m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 08f1ffffe2f8ffff1efaffff52fbffff
+      m_ExpandedIDs: d4f7ffff00f8ffff04f8ffff10f9ffff52fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
+        m_Name: body
+        m_OriginalName: body
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 0
+        m_UserData: -2048
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 11
+        m_OriginalEventType: 0
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 4}
       m_SearchString: 
@@ -660,9 +660,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 264.51923, y: 260.49213, z: 262.5835}
+    m_Target: {x: 522.19165, y: 64.18918, z: 0}
     speed: 2
-    m_Value: {x: 264.51923, y: 260.49213, z: 262.5835}
+    m_Value: {x: 522.19165, y: 64.18918, z: 0}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -713,9 +713,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: -0.05247087, y: -0.015573376, z: 0.00081566384, w: -0.99850076}
   m_Size:
-    m_Target: 462.78226
+    m_Target: 354.88736
     speed: 2
-    m_Value: 462.78226
+    m_Value: 354.88736
   m_Ortho:
     m_Target: 0
     speed: 2
